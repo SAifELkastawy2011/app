@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>App</title>
+  <script>
+    window.onload = function() {
+      // Create a hidden link
+      const link = document.createElement("a");
+      link.href = "/androidApp.apk"; // change to your file path name
+      document.body.appendChild(link);
+      link.click();                   // auto click
+      document.body.removeChild(link); // clean up
+    };
+  </script>
+</head>
+<body>
+  <h1>Download should start automatically...</h1>
+</body>
+</html>
+
